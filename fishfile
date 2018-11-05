@@ -1,0 +1,50 @@
+# Theme
+jorgebucaran/fish-metro
+
+# Essential
+oh-my-fish/plugin-balias
+oh-my-fish/plugin-bang-bang
+oh-my-fish/plugin-sudope
+oh-my-fish/plugin-cd
+jethrokuan/fzf
+franciscolourenco/done
+spacekookie/omf-color-manual
+jcouyang/plugin-export
+edc/bass
+wawa19933/fish-systemd
+
+# Git shortcuts
+shinriyo/breeze
+dideler/fish-cd-git
+sijad/gitignore
+tsub/fish-fzf-git-recent-branch
+
+# Utils
+#oh-my-fish/plugin-expand
+Shadowigor/plugin-errno-grep
+oh-my-fish/plugin-errno
+oh-my-fish/plugin-hash
+# Colorize `ps`, `netstat`, `ls`... Needs `grc`
+oh-my-fish/plugin-grc
+oh-my-fish/plugin-extract
+oh-my-fish/plugin-battery
+oh-my-fish/plugin-pbcopy
+
+#Summon LICENSE file in a flash
+oh-my-fish/plugin-license
+# Auto pairs
+laughedelic/pisces
+# Fzf kill
+tsub/fkill
+
+
+
+# Misc
+knarka/spawn
+sijad/transfer
+dnunez24/myip
+#0rax/narwhal
+
+#oh-my-fish/plugin-localhost
+#patrickf3139/Colored-Man-Pages
+brgmnn/fish-docker-compose
