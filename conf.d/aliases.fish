@@ -11,12 +11,12 @@ else
 end
 
 if not type -q rg
-    eval $alias rg 'grep -Ei'
+    eval $alias rg \'grep -Ei\'
 else
-    eval $alias rg 'rg -i'
+    eval $alias rg \'rg -i\'
 end
 
-eval $alias ip 'ip --color'
+eval $alias ip \'ip --color\'
 alias df 'df -kh'
 alias du 'du -kh'
 alias free 'free -h'
@@ -37,39 +37,20 @@ else
 end
 alias mkdir 'mkdir -pv'
 
-# eval $alias rsync 'rsync -h --progress'
-eval $alias rsync-copy "rsync -avh --progress"
-eval $alias rsync-move "rsync -avh --remove-source-files --progress"
-eval $alias rsync-update "rsync -avhu --progress"
-eval $alias rsync-synchronize "rsync -avhu --delete --progress"
+# eval $alias rsync \'rsync -h --progress\'
+eval $alias rsync-copy \"rsync -avh --progress\"
+eval $alias rsync-move \"rsync -avh --remove-source-files --progress\"
+eval $alias rsync-update \"rsync -avhu --progress\"
+eval $alias rsync-synchronize \"rsync -avhu --delete --progress\"
 
 # Package managers
-type -q pacman; and eval $alias pacman 'sudo pacman'
-type -q dnf; and eval $alias dnf 'sudo dnf'
-type -q yum; and eval $alias yum 'sudo yum'
-type -q rpm; and eval $alias rpm 'sudo rpm'
-type -q apt; and eval $alias apt 'sudo apt'
-type -q apt-get; and eval $alias apt-get 'sudo apt-get'
-type -q dpkg; and eval $alias dpkg 'sudo dpkg'
-
-# Systemd
-set -l user_commands \
-      list-units list-sockets is-active status show help list-unit-files\
-      is-enabled list-jobs show-environment cat list-machines
-
-set -l sudo_commands \
-      start stop reload restart try-restart isolate kill\
-      reset-failed enable disable reenable preset mask unmask\
-      link load cancel set-environment unset-environment\
-      edit daemon-reload daemon-reexec
-
-for c in $user_commands
-    eval $alias sc-$c "systemctl $c"
-end
-
-for c in $sudo_commands
-    eval $alias sc-$c "sudo systemctl $c"
-end
+type -q pacman; and eval $alias pacman \'sudo pacman\'
+type -q dnf; and eval $alias dnf \'sudo dnf\'
+type -q yum; and eval $alias yum \'sudo yum\'
+type -q rpm; and eval $alias rpm \'sudo rpm\'
+type -q apt; and eval $alias apt \'sudo apt\'
+type -q apt-get; and eval $alias apt-get \'sudo apt-get\'
+type -q dpkg; and eval $alias dpkg \'sudo dpkg\'
 
 # Nmap
 alias nmap_open_ports "nmap --open"

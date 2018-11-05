@@ -1,4 +1,4 @@
-# set -g default_user smaximov
+# set -g default_user 
 set -g theme_display_git yes
 set -g theme_display_git_untracked yes
 set -g theme_display_git_ahead_verbose yes
