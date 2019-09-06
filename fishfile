@@ -1,20 +1,26 @@
 # Theme
-jorgebucaran/fish-metro
+fishpkg/fish-prompt-metro
+fishpkg/fish-humanize-duration
+decors/fish-colored-man
 
 # Essential
-oh-my-fish/plugin-balias
-oh-my-fish/plugin-bang-bang
+franciscolourenco/done
+jethrokuan/fzf
+jorgebucaran/fish-bax
 oh-my-fish/plugin-sudope
 oh-my-fish/plugin-cd
-jethrokuan/fzf
-franciscolourenco/done
-spacekookie/omf-color-manual
-jcouyang/plugin-export
-edc/bass
+wawa19933/fish-exa
+wawa19933/fish-rsync
 wawa19933/fish-systemd
 
+brgmnn/fish-docker-compose
+tsub/fkill
+
+
 # Git shortcuts
-shinriyo/breeze
+#shinriyo/breeze
+
+# Quickly navigate between GitHub repo
 dideler/fish-cd-git
 sijad/gitignore
 tsub/fish-fzf-git-recent-branch
@@ -24,27 +30,19 @@ tsub/fish-fzf-git-recent-branch
 Shadowigor/plugin-errno-grep
 oh-my-fish/plugin-errno
 oh-my-fish/plugin-hash
-# Colorize `ps`, `netstat`, `ls`... Needs `grc`
-oh-my-fish/plugin-grc
 oh-my-fish/plugin-extract
 oh-my-fish/plugin-battery
 oh-my-fish/plugin-pbcopy
 
 #Summon LICENSE file in a flash
-oh-my-fish/plugin-license
-# Auto pairs
-laughedelic/pisces
-# Fzf kill
-tsub/fkill
+#oh-my-fish/plugin-license
 
+# Auto pairs
+#laughedelic/pisces
 
 
 # Misc
 knarka/spawn
 sijad/transfer
-dnunez24/myip
 #0rax/narwhal
-
 #oh-my-fish/plugin-localhost
-#patrickf3139/Colored-Man-Pages
-brgmnn/fish-docker-compose

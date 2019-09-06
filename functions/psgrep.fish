@@ -1,3 +1,3 @@
 function psgrep --description 'grep ps output'
-  command ps aux | rg -v 'rg -i' | rg -i $argv
+  command ps aux | grep -v 'grep -i' | grep -i $argv
 end
